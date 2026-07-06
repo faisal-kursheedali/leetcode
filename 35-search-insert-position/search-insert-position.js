@@ -6,8 +6,10 @@
 var searchInsert = function(nums, target) {
     if (target < nums[0]) return 0
     if (target > nums[nums.length-1]) return nums.length;
+    let i= nums[Math.floor(nums.lenght/2)]>target ? Math.floor(nums.lenght/2) : 0
+    let j= nums[Math.floor(nums.lenght/2)]<target ? Math.floor(nums.lenght/2) : nums.length
     let prev;
-    for (let i=0; i< nums.length; i++){
+    for (i; i< j; i++){
         let value = nums[i];
         if (value === target){
             return i
