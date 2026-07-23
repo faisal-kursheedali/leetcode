@@ -14,12 +14,5 @@ var findGCD = function(nums) {
     newNums = nums.sort((a,b)=> a-b)
     smallDevisors =new Set(findDeviser(newNums[0]))
     commonDevisors = findDeviser(newNums[newNums.length-1]).filter((n)=> smallDevisors.has(n))
-    console.log(nums)
-    console.log(newNums)
-    console.log(newNums[0])
-    console.log(newNums[newNums.length-1])
-    console.log(smallDevisors)
-    console.log(findDeviser(newNums[newNums.length-1]))
-    console.log(commonDevisors)
     return commonDevisors[commonDevisors.length-1]
 }
