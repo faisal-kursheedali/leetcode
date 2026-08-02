@@ -19,7 +19,5 @@ var stoneGame = function(piles) {
             break;
         }
     }
-    console.log(alice)
-    console.log(bob)
     return alice>bob
 };
