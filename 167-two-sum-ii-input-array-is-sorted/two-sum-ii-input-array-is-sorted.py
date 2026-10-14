@@ -7,11 +7,11 @@ class Solution(object):
         """
         i = 0
         j = len(numbers) -1 
-        while ( i != j):
-            sum = numbers[i] + numbers[j]
-            if (sum == target):
+        while ( i < j):
+            total = numbers[i] + numbers[j]
+            if (total == target):
                 break
-            elif(sum < target):
+            elif(total < target):
                 i = i +1
             else:
                 j = j -1
